@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5uA-Ev-qlh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5uA-Ev-qlh">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -31,241 +31,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fashion" id="sUM-kW-tNE">
-                        <barButtonItem key="rightBarButtonItem" title="Recipies" id="aZ8-4r-fbs">
-                            <connections>
-                                <segue destination="MLZ-Hc-THi" kind="push" id="DFM-jy-mMp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Fashion" id="sUM-kW-tNE"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-719" y="-449"/>
         </scene>
-        <!--Recipies View Controller-->
-        <scene sceneID="dam-Yz-ZIW">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jEC-Tn-W9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="MLZ-Hc-THi" customClass="RecipiesViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XZV-Z0-6kH">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jaW-Ss-a1W"/>
-                    <connections>
-                        <segue destination="4SD-fC-kSB" kind="modal" identifier="showDetails" modalPresentationStyle="formSheet" id="idD-ZB-rJL"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="255" y="-449"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iWm-ys-GuJ">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="POW-Xu-Adn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="4SD-fC-kSB" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5TG-N3-0MM">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="RaH-o9-NXg" kind="relationship" relationship="rootViewController" id="TGM-Ix-iJJ"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="1223" y="-247"/>
-        </scene>
-        <!--Details View Controller-->
-        <scene sceneID="41z-3H-pBX">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0aE-pa-F2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="RaH-o9-NXg" customClass="DetailsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4hi-gB-k40">
-                        <rect key="frame" x="0.0" y="44" width="540" height="576"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Jrd-1A-2lT">
-                                <rect key="frame" x="0.0" y="0.0" width="540" height="576"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="recipe_detail_frame.png" id="N2w-9o-Paj">
-                                <rect key="frame" x="13" y="15" width="257" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="recipe_detail.png" id="BsI-DN-4D0">
-                                <rect key="frame" x="23" y="25" width="237" height="189"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="GOt-24-BPr">
-                                <rect key="frame" x="268" y="91" width="266" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">1/8 cup chopped dried cherries,  1/8 cup chopped dried mango, 1/4 cup dried cranberries
-1/4 cup dried currants, 2 tablespoons chopped candied citron, 1/4 cup dark rum, 1/2 cup butter
-1/4 cup packed brown sugar, 1 egg, 1/2 cup 
-all-purpose flour, 1/8 teaspoon baking soda, 1/4 teaspoon salt, 1/4 teaspoon ground cinnamon
-1/4 cup unsulfured molasses
-2 tablespoons milk
-1/4 cup chopped pecans
-1/4 cup dark rum, divided</string>
-                                <color key="textColor" red="0.51764708757400513" green="0.58039218187332153" blue="0.63137257099151611" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dificulty:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nOs-wX-3ep">
-                                <rect key="frame" x="278" y="20" width="71" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.26274511218070984" green="0.35294118523597717" blue="0.43137258291244507" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Directions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aDV-HW-C1Y">
-                                <rect key="frame" x="20" y="238" width="85" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.26274511220000002" green="0.35294118520000001" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tmG-Us-zZy">
-                                <rect key="frame" x="278" y="45" width="48" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.26274511220000002" green="0.35294118520000001" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ingredients:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9Vl-JZ-bes">
-                                <rect key="frame" x="278" y="69" width="93" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.26274511220000002" green="0.35294118520000001" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1h20min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="rDk-RR-n4k">
-                                <rect key="frame" x="334" y="45" width="80" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.5176470876" green="0.58039218189999997" blue="0.63137257099999999" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Intermediate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zLi-s2-qjW">
-                                <rect key="frame" x="357" y="20" width="99" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.5176470876" green="0.58039218189999997" blue="0.63137257099999999" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="53" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z1l-qI-Rie">
-                                <rect key="frame" x="20" y="261" width="500" height="303"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="35" id="F7n-9q-RWm" customClass="DirectionsCell">
-                                        <rect key="frame" x="0.0" y="22" width="500" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="34"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" image="recipe_detail_dot.png" id="wfd-P6-Caz">
-                                                    <rect key="frame" x="17" y="6" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GDm-CV-ijT">
-                                                    <rect key="frame" x="17" y="6" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lav-50-gFj">
-                                                    <rect key="frame" x="55" y="5" width="445" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" red="0.5176470876" green="0.58039218189999997" blue="0.63137257099999999" alpha="1" colorSpace="deviceRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <size key="shadowOffset" width="0.0" height="1"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="lblBadge" destination="GDm-CV-ijT" id="1mB-wY-LPI"/>
-                                            <outlet property="lblDescription" destination="lav-50-gFj" id="1jb-su-784"/>
-                                            <outlet property="viewBadge" destination="wfd-P6-Caz" id="jxl-WM-fPV"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="RaH-o9-NXg" id="Hex-QU-D4X"/>
-                                    <outlet property="delegate" destination="RaH-o9-NXg" id="HhS-5M-79G"/>
-                                </connections>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="recipe_detail_liner.png" id="77D-cv-q64">
-                                <rect key="frame" x="0.0" y="227" width="540" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="dn8-2W-7cc">
-                        <barButtonItem key="rightBarButtonItem" title="Close" id="PdJ-tT-x36">
-                            <connections>
-                                <action selector="closeClicked:" destination="RaH-o9-NXg" id="G5m-fi-RK8"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="bkgView" destination="Jrd-1A-2lT" id="7GO-Ua-GcV"/>
-                        <outlet property="btnClose" destination="PdJ-tT-x36" id="0Bw-eJ-RCD"/>
-                        <outlet property="imageView" destination="BsI-DN-4D0" id="4bZ-7x-olA"/>
-                        <outlet property="lblDificulty" destination="zLi-s2-qjW" id="SQe-5B-hDZ"/>
-                        <outlet property="lblTime" destination="rDk-RR-n4k" id="vMw-ZL-44G"/>
-                        <outlet property="tableView" destination="Z1l-qI-Rie" id="Zv3-LR-HnP"/>
-                        <outlet property="txtIngredients" destination="GOt-24-BPr" id="Ygq-Rc-aPK"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2038" y="-241"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="recipe_detail.png" width="237" height="189"/>
-        <image name="recipe_detail_dot.png" width="19" height="19"/>
-        <image name="recipe_detail_frame.png" width="257" height="209"/>
-        <image name="recipe_detail_liner.png" width="625" height="1"/>
-    </resources>
     <classes>
-        <class className="DetailsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeClicked:"/>
-                <relationship kind="outlet" name="bkgView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="btnClose" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="lblDificulty" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="txtIngredients" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="DirectionsCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DirectionsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lblBadge" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="viewBadge" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
         <class className="FashionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FashionViewController.h"/>
-        </class>
-        <class className="RecipiesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecipiesViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
